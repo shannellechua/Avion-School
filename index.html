@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    
+    
+    <div class="visible" id="screen1">
+      <div class="title">Let's play Tic-Tac-Toe!</div>
+      <div class="title css3-blink">Player 1, choose:</div>
+
+      <div class="choices">
+       <button id="x" onclick="showScreen2()">
+        X
+       </button>
+      <p> OR </p>
+      <button id="o" onclick="playerChoice()">O
+      </button>
+      </div>
+    </div>
+
+    <div class="hidden" id="screen2">
+      <div class="title">Tic-Tac-Toe</div>
+
+      <div class="css3-blink" id="subtitle">Hello Player 1! Choose:</div>
+
+      <div id="board"></div>
+      </div>
+
+   
+  </div>
+
+  <div class="buttons">
+    <button id="previous" onclick="previousMove()">
+      < </button>
+        <p id="status">0</p>
+        <button id="next" onclick="nextMove()"> > </button>
+  </div>
+
+  <div class="buttons">
+    <p class="css3-blink" id="reset" onclick="resetBoard()">⟳</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
